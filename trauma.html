@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoseCalc Pro - Trauma</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="logo">
+        <h1>🚑 DoseCalc SIV</h1>
+        <p>Trauma Pediátrico</p>
+    </div>
+
+   <div class="medicamento">
+
+    <h2>Ácido Tranexâmico</h2>
+
+    <div class="info">
+
+        <p><strong>Indicação</strong></p>
+        <p>Trauma Pediátrico</p>
+
+        <br>
+
+        <p><strong>Apresentação</strong></p>
+        <p>100 mg/ml (Ampola 5 ml)</p>
+
+        <br>
+
+        <p><strong>Administração</strong></p>
+        <p>Diluir em 50 ml de NaCl 0,9%</p>
+
+        <br>
+
+        <p><strong>Dose SIV</strong></p>
+        <p>Bólus de 15 mg/kg EV/IO em 10 minutos</p>
+
+        <p>Máximo: 1 g</p>
+
+    </div>
+
+    <label>Peso da criança (kg)</label>
+
+    <input
+        type="number"
+        id="pesoTXA"
+        placeholder="Ex.: 18">
+
+    <button onclick="calcularTXA()">
+
+        CALCULAR
+
+    </button>
+
+    <div id="resultadoTXA" class="resultado"></div>
+
+</div>
+
+    <button class="btn-voltar" onclick="window.location.href='pediatria.html'">
+        VOLTAR
+    </button>
+
+    <footer class="footer">
+        byRoger
+    </footer>
+
+</div>
+
+<script src="trauma.js"></script>
+
+</body>
+</html>

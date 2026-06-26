@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoseCalc Pro - Adulto</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="logo">
+        <h1>💉 DoseCalc SIV</h1>
+        <p>Cálculo de Medicação - Adulto</p>
+    </div>
+
+    <!-- ================= CETAMINA ================= -->
+
+    <div class="medicamento">
+
+        <h2>Cetamina</h2>
+
+        <div class="info">
+
+            <p><strong>Apresentação</strong></p>
+            <p>500 mg / 10 ml</p>
+
+            <br>
+
+            <p><strong>Diluição</strong></p>
+            <p>Diluir 50 mg (1 ml) em 19 ml NaCl 0,9%</p>
+
+            <br>
+
+            <p><strong>Dose SIV</strong></p>
+            <p>0,25 mg/kg</p>
+
+        </div>
+
+        <label>Peso do utente (kg)</label>
+
+        <input type="number" id="peso" placeholder="Ex.: 80">
+
+        <button onclick="calcularDose()">
+            CALCULAR
+        </button>
+
+        <div id="resultado" class="resultado"></div>
+
+    </div>
+<br>
+<br>
+<br>
+    <!-- ================= FENTANIL ================= -->
+
+    <div class="medicamento">
+
+        <h2>Fentanil</h2>
+
+        <div class="info">
+
+            <p><strong>Apresentação</strong></p>
+            <p>0,25 mg / 5 ml</p>
+
+            <br>
+
+            <p><strong>Diluição</strong></p>
+            <p>Diluir 5 ml de Fentanil em 5 ml NaCl 0,9%</p>
+
+            <br>
+
+            <p><strong>Dose SIV</strong></p>
+            <p>1 mcg/kg (Máx. 50 mcg)</p>
+
+        </div>
+
+        <label>Peso do utente (kg)</label>
+
+        <input type="number" id="pesoFentanil" placeholder="Ex.: 80">
+
+        <button onclick="calcularFentanil()">
+            CALCULAR
+        </button>
+
+        <div id="resultadoFentanil" class="resultado"></div>
+
+    </div>
+    <br>
+<button class="btn-voltar" onclick="window.location.href='index.html'">
+    VOLTAR
+</button>
+<br>
+    <footer class="footer">
+        byRoger
+    </footer>
+
+</div>
+
+<script src="adulto.js"></script>
+
+</body>
+
+</html>
+</div>
+
+<br>
+
+
+</div>

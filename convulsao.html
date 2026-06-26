@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoseCalc Pro - Convulsão</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="logo">
+        <h1>⚡ DoseCalc SIV</h1>
+        <p>Convulsão Pediátrica</p>
+    </div>
+
+    <div class="medicamento">
+
+    <h2>Diazepam</h2>
+
+    <div class="info">
+
+        <p><strong>Apresentação</strong></p>
+        <p>10 mg / 2 ml</p>
+
+        <br>
+
+        <p><strong>Diluição</strong></p>
+        <p>2 ml de Diazepam + 8 ml de NaCl 0,9%</p>
+
+        <br>
+
+        <p><strong>Dose SIV</strong></p>
+        <p>0,2 mg/kg EV</p>
+
+        <p>Máx. &lt;5 anos: 5 mg</p>
+
+        <p>Máx. ≥5 anos: 10 mg</p>
+
+    </div>
+
+    <label>Idade (anos)</label>
+
+    <input
+        type="number"
+        id="idadeDiazepam"
+        placeholder="Ex.: 4">
+
+    <label>Peso da criança (kg)</label>
+
+    <input
+        type="number"
+        id="pesoDiazepam"
+        placeholder="Ex.: 18">
+
+    <button onclick="calcularDiazepam()">
+
+        CALCULAR
+
+    </button>
+
+    <div id="resultadoDiazepam" class="resultado"></div>
+
+</div>
+
+    <button class="btn-voltar" onclick="window.location.href='pediatria.html'">
+        VOLTAR
+    </button>
+
+    <footer class="footer">
+        byRoger
+    </footer>
+
+</div>
+
+<script src="convulsao.js"></script>
+
+</body>
+</html>
